@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv= “X-UA-Compatible” content= “IE=edge”> 
+        <meta name= “viewport” content= “width=device-width, initial-scale=1.0” > 
+        <title>Pasteleria</title> 
+        <style>
+            body{
+                margin: 0px;
+                background-color:plum;
+            }
+            header{
+                width:100%;
+                background-color:plum;
+                margin: 0;
+                padding:10px;
+            }
+            .logo{
+                margin-top: 5px;
+                margin-left: 5px;
+                float: left;
+                border-radius: 15px 15px 15px 15px;
+                opacity: 0.8;
+            }
+            h1{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color:brown;
+                font-size:xx-large;
+            }
+            .titulo{
+                float:left;
+                text-align:center;
+                vertical-align: center;
+            }
+            .frase{
+                color: brown;
+                font-size:medium;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-style: italic;            
+            }
+            nav{
+                float: left;
+                width: 100%;
+            }
+            nav ul{
+                list-style-type: none;
+                margin:0;
+                padding: 0;
+                overflow: hidden;
+                background-color: bisque;
+            }
+            nav li {
+                float:left;
+            }
+            nav li a {
+                display:block;
+                color:coral;
+                text-align: center;
+                padding: 8px;
+                text-decoration: none;
+            }
+            nav li a:hover{
+                background-color: darkcyan;
+                color:beige;
+            }
+            .mainSection {
+                background-image: url(/imagenes/Fondo.jpg);
+                padding: 30px;
+                float: left;
+                width: 70%;
+            }
+            .rigthSection{
+                width: 30%;
+                float: left;
+            }
+            footer{
+                width: 100%;
+                float: left;
+            }
+            .tarjeta{
+                float: left;
+                width:300px;
+                border: 1px solid black;
+                border-radius: 5px;
+                align-items:center;
+                margin:5px;
+                padding:5px;
+            }
+            div {
+               text-align: center;
+            }
+            ol {
+                text-align: left;
+            }
+        </style> 
+    </head>
+    <body>
+        <header class="titulo">
+                <img src="imagenes/LogoEmpresa.gif" alt="logoEmpresa" width="130px" class="logo"/>
+                <h1>Pasteleria la amorosa</h1>
+                <p class="frase">El amor que se siente en tu paladar</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Catalogo.html">Catalogo</a></li>
+                <li><a href="Personalizar.html">Personalizados</a></li>
+                <li><a href="Ubicacion.html">Ubicación</a></li>
+                <li><a href="pedido.html">Pedidos</a></li>
+            </ul>
+        </nav>
+            <section class="mainSection">
+                <h2>Personaliza tu pastel</h2>
+                <form action="Confirmar.php" method="POST">
+                    <label for="nombre"> Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" 
+                    placeholder="Ingresa tu nombre">
+                    <br>
+                    <label for="telefono"> Telefono:</label>
+                    <input type="number" name="telefono" id="telefono" 
+                    placeholder="10 digitos">
+                    <br>
+                    <label for="correo"> Correo:</label>
+                    <input type="email" name="correo" id="correo" 
+                    placeholder="Ingresa un correo">
+                    <br>
+                    <label for="descripcion"> Descripción del pastel:</label><br>
+
+                    <textarea id="descripcion" name="descripcion" width="300px"
+                    maxlength="300" heigth="300px"
+                    placeholder="Describe tu pedido"></textarea>
+                    <br>
+                    
+                    <label for="Tipo"> Selecciona el tipo de pastel:</label>
+                    <select id="Tipo" name="Tipo">
+                        <option value="PanVainilla">Pan vainilla</option>
+                        <option value="PanChocolate">Pan Chocolate</option>
+                        <option value="cheesecake">Cheesecake</option>
+                      </select><br>
+                      <label for="Tipo"> Selecciona el tipo de betún:</label>
+                    <select id="Tipo" name="Tipo">
+                        <option value="Chocolate">Chocolate</option>
+                        <option value="Vainilla">Vainilla</option>
+                        <option value="yogurt">yogurt</option>
+                      </select><br>
+                      <label for="Tipo"> Adornos:</label>
+                      <select id="Tipo" name="Tipo">
+                          <option value="Chispas">Chispas</option>
+                          <option value="Fresas">fresas</option>
+                          <option value="Rosas">Rosas</option>
+                        </select><br>
+                        <input type="submit" value="Pedir"/>
+                </form>
+        </section>
+        <section class="rightSection">
+                <h2><strong>¿Cumples años?</strong></h2>
+                <p>Revisa nuestras promociones para cumpleañeros</p>
+                <img src="imagenes/promoCumple.gif" alt="Promoción de cumpleaños." 
+                width="300px"/>
+        </section>
+        <footer>
+            <a href="https://www.ubereats.com/mx">
+                <img src="imagenes/uber.png" alt="UberEats" width="50px"></a>
+            <a href="https://mexico.didiglobal.com/">
+                <img src="imagenes/Didi.png" alt="Didi" width="50px"></a>
+            <a href="https://www.rappi.com.mx/">
+                <img src="imagenes/Rappi.jpg" alt="Rappi" width="50px"></a>
+            
+            El cliente de la pastelería necesita ver los diferentes adornos 
+            con los que se puede decorar el pastel y los precios de cada uno.
+            
+            El cliente de la pastelería tendrá la posibilidad de combinar 
+            sabores dependiendo de sus preferencias.
+
+            El cliente de la pastelería tendrá la posibilidad de combinar 
+            adornos dependiendo de sus preferencias.
+            
+            El cliente de la pastelería necesita poner en un formulario su pedido.
+            
+            El formulario debe de contener los datos de contacto del cliente 
+            que son Nombre, Teléfono, Correo Electrónico, Descripción general 
+            del pastel y la selección de sabores y adornos.
+
+            El pastelero necesita tener la información de la cantidad de 
+            sabores que le quedan para hacer los pasteles.
+            El pastelero necesita tener la información de la cantidad de 
+            adornos que le quedan para hacer los pasteles.
+            El pastelero necesita una tabla donde aparezcan los pedidos que se 
+            han realizado con los datos del formulario.
+            La página debe tener información de la pastelería que es 
+            Dirección, Teléfono y horarios de atención.
+            
+            Prácticas:
+            Crear marca de la pastelería como un logo y los mensajes que daremos 
+            desde la marca.
+            Maquetación de páginas de cliente de la pastelería.
+            Maquetación de páginas del pastelero.
+            Bonus: En caso de que te quede corto el ejercicio siguele con esto!
+            Bonus de estilos (Intro a CSS)
+            Bonus de Rutas (Navegación en la página)
+            Bonus de despliegue (Montar la página en línea con dominio gratuito)
+        </footer>
+    </body>
+</html>
